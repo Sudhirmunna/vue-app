@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" srcSet="./assets/vue.png">
+    <HelloWorld v-bind:msg=message @changeMsg="setMessage"/>
   </div>
 </template>
 
@@ -10,6 +10,14 @@ import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
+  props: {
+    message: String
+  },
+  methods: {
+    setMessage(value) {
+      this.$emit("vueEvent", "Hey "+ value + " this event is from Vue micro app !!");
+    }
+  },
   components: {
     HelloWorld
   }
