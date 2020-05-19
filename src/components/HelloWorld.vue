@@ -37,4 +37,7 @@ li {
 a {
   color: #42b983;
 }
+ h1{
+      font-size: 1.25em !important;
+    }
 </style>

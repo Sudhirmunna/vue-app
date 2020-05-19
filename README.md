@@ -5,20 +5,14 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Build
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Run `npm run build` to build the project. 
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Serve
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Run `serve -l 5003 dist`
+
+# TODO: gulpfile to remove hash from generated dist file 
+#work-around: After build update container app with new dist filepath.
+
